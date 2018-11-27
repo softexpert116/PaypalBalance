@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:padding="@dimen/widget_margin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@android:color/black"
+        ></RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ly_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@android:color/transparent"
+        >
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:contentDescription="@string/appwidget_text"
+            android:text="Paypal Balance"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold|italic" />
+        <Button
+            android:id="@+id/btn_set"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_setting"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/ly_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Account"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="5dp"
+    android:background="@color/colorPrimary"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        >
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="user1.gmail.com: "
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/txt_balance"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="50000.20 USD"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            />
+        <Button
+            android:id="@+id/btn_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remove"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            />
+    </LinearLayout>
+</RelativeLayout>
